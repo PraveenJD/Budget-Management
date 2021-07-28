@@ -99,5 +99,8 @@ document.querySelector("#form-group").addEventListener("submit", (e) => {
 
     UI.showAlert("Item Added.", "success");
     UI.clearFields();
+    setTimeout(function () {
+      window.location.reload();
+    }, 3000);
   }
 });
