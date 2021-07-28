@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinayaga || Budget Management</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-4 text-center text-uppercase">
+        <i class="fas fa-receipt text-primary"></i>
+        JD <span class="text-primary">Home Budget</span> Management
+      </h1>
+      <div class="d-flex justify-content-between">
+        <a class="btn btn-danger mt-4 disabled">4578</a>
+        <a href="./budget.html" class="btn btn-primary mt-4"
+          >Goto Budget Details</a
+        >
+      </div>
+      <form id="form-group">
+        <div class="row mt-4 parent">
+          <div class="form-group col-md-6">
+            <label for="List">List Item</label>
+            <input type="text" class="form-control" id="list" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="amount">Amount</label>
+            <input type="number" class="form-control" id="amount" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100 mt-4">Add</button>
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Sl no.</th>
+            <th>Date</th>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="item-list"></tbody>
+        <thead class="totalAmount">
+          <tr>
+            <th>Total.</th>
+            <th></th>
+            <th></th>
+            <th class="totalValue"></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <!-- Scripts -->
+    <script src="./app.js"></script>
+  </body>
+</html>
