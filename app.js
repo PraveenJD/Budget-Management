@@ -29,7 +29,7 @@ class UI {
     row.innerHTML = `
         <td class="slNo">${item.slNo}</td>
       <td>${item.date}</td>
-      <td>${item.itemName}</td>
+      <td class="text-capitalize">${item.itemName}</td>
       <td>${item.amount}</td>
         `;
     list.appendChild(row);
